@@ -1,0 +1,20 @@
+{
+	"name": "pharmacy-backend",
+	"version": "1.0.0",
+	"description": "Pharmacy Stock Management System Backend",
+	"main": "src/index.ts",
+	"scripts": {
+		"dev": "bun run --watch src/index.ts",
+		"start": "bun run src/index.ts",
+		"build": "bun build src/index.ts --outdir dist",
+		"db:migrate": "bun run src/db/migrate.ts"
+	},
+	"dependencies": {
+		"hono": "^4.0.0",
+		"uuid": "^13.0.0"
+	},
+	"devDependencies": {
+		"@types/uuid": "^11.0.0",
+		"typescript": "^5.3.3"
+	}
+}
